@@ -7,6 +7,9 @@ import java.util.Random;
 //Author: Roger Stenman
 // This program calculates the number of position sets that x pieces can take on a y*y board
 // The program is in need of both refactoring and probably debugging and correct functionality is not verified
+// The program is NOT performance effective! Calculation of a 5*5 board with 5 pieces takes forever.
+
+// .... or I could have simply used this formula: C(NoF, NoP) --> NoF! / (NoP!(NoF - NoP)!) = combinations =)
 
 public class Start {
 
@@ -19,9 +22,9 @@ public class Start {
 		int numberOfListItemsAdded = 0;
 		
 		int tempPos;
-		int numberOfPieces = 3;
-		int numberOfFields = 9;
-		int randomizations = 100;
+		int numberOfPieces = 5;
+		int numberOfFields = 25;
+		int randomizations = 100000;
 
 		ArrayList<byte[]> list = new ArrayList<byte[]>();
 
