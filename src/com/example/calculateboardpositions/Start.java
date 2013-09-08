@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 //Author: Roger Stenman
-// This program calculates the number of position sets that x pieces can take on a y*y board
+// This program calculates and prints the number of position sets that x pieces can take on a y*y board
 // The program is in need of both refactoring and probably debugging and correct functionality is not verified
 // The program is NOT performance effective! Calculation of a 5*5 board with 5 pieces takes forever.
 
-// .... or I could have simply used this formula: C(NoF, NoP) --> NoF! / (NoP!(NoF - NoP)!) = combinations =)
+// .... OR, I could have simply used this formula: C(NoF, NoP) --> NoF! / (NoP!(NoF - NoP)!) = combinations =)
 
 public class Start {
 
